@@ -315,7 +315,7 @@ class TestRunner(object):
         self._start_time = logger.get_log_file_timestamp()
         self._log_path = os.path.join(self._log_dir, self._test_bed_name,
                                       self._start_time)
-        #logger.setup_test_logger(self._log_path, self._test_bed_name)
+        logger.setup_test_logger(self._log_path, self._test_bed_name)
 
     def _teardown_logger(self):
         """Tears down logging at the end of the test run.
